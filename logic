@@ -1,0 +1,14 @@
+def maskify(a):
+	if len(a) <= 4:
+		return (a)
+	else:
+		b = len(a)
+		c = b - 4
+		d = a[:c]
+		e = c * "#"
+		z = slice(c,b)
+		y = (a[z])
+		x = e + y 
+		return (x)
+credit_card = input("Please give me the credit card number you would like masked? ")
+print ("Your masked credit card number is: ", maskify(credit_card))
